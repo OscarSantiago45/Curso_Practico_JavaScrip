@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Curso Práctico de JS</title>
+</head>
+<body background="./img/fondo2.jpg">
+    <header>
+        <h1 class="centrar">Figuras Geometricas</h1>
+    </header>
+    <main>
+        <section>
+            
+
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <h2>Calcula El Area y Perimetro de un Cuadrado</h2>
+                    <form action="">
+                        <div>
+                            <label for="InputCuadrado">Escribe cuanto mide cada lado de tu cuadrado</label>
+                            <input id="InputCuadrado" type="number" required>
+                        </div>
+                        <div>
+                            <button class="button1" type="button" onclick="calcularPerimetroCuadrado()">Calcular Perimetro</button>
+                            <button class="button1" type="button" onclick="calcularArea()">Calcular Area</button>
+                        </div>
+                        
+                    </form>
+                    <div id="divCuadrado" class="correcto"><p></p></div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <h2>Calcula el Area y el Perimetro de un Triangulo</h2>
+                    <form action="">
+                        <div>
+                            <label for="InputLado1T">Escribe cuanto mide el dado Derecho</label>
+                            <input type="number" id="InputLado1T" required>
+                        </div>
+                        <div>
+                            <label for="InputLado2">Escribe Cuanto mide el lado Izquierdo</label>
+                            <input type="number" id="InputLado2T" required>
+                        </div>
+                        <div>
+                            <label for="InputBase">Escribe Cuanto mide la Base</label>
+                            <input type="number" id="InputBaseT" required>
+                        </div>
+                        <div>
+                            <label for="InputAltura">La Altura del Triangulo Es: </label>
+                            <input type="text" id="InputAltura">
+                        </div>
+                        <label for="">Reemplaza el mensaje de la altura si no es in triangulo isosceles</label>
+                        <button class="button1" type="button" onclick="calcularPerimetroTriangulo()">Calcular El Perimetro</button>
+                        <button class="button1" type="button" onclick="calcularAreaTriangulo()">Calcular El Area</button>
+                    </form>
+                    <div id="divT" class="correcto"><p></p></div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <h2>Calcula el Diametro, El Perimetro y el Area de un Circulo</h2>
+                    <form action="">
+                        <div>
+                            <label for="InputRadio">Escribe cuanto midel el Radio</label>
+                            <input type="number" id="InputRadio">
+                        </div>
+                        <button class="button1" type="button" onclick="calcularDiametroCirculo()">Calcular el Diametro</button>
+                        <button class="button1" type="button" onclick="calcularPerimetroCirculo()">Calcular El Perimetro</button>
+                        <button class="button1" type="button" onclick="calcularAreaCirculo()">Calcular El Area</button>
+                        <div id="divCir" class="correcto"><p></p></div>
+                    </form>
+                </div>
+              </div>
+        </section>
+    </main>
+    <script src="./figuras.js"></script>
+</body>
+</html>
