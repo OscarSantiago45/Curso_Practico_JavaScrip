@@ -9,3 +9,5 @@
 - Tercer Paso: Crear Funciones
 
 - Cuarto Paso: Integrar JavaScrip con Html
+
+![Screenshot](img/screenshot.jpg)   
