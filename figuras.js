@@ -91,7 +91,7 @@ function calcularAreaTriangulo(){
     const input3= document.getElementById("InputBaseT");
     const value3= parseInt(input3.value);
     const input4= document.getElementById("InputAltura");
-    const value4= parseInt(input4.value);
+    const value4= parseFloat(input4.value);
 
     const perimetro= areaTriangulo(value3,value4);
     document.getElementById("divT").innerHTML = `<p>El Area del Triangulo es: ${perimetro}</p>`;
