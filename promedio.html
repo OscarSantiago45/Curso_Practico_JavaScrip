@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Promedios</title>
+</head>
+<body>
+    <header>
+        <section>
+            <figure>
+                <a href="./index.html">
+                    <img src="https://img.icons8.com/material-rounded/50/000000/home.png"/>
+                </a>
+            </figure>   
+        </section>
+        <h1 class="centrar"></h1>
+    </header>
+    <main>
+        <section>
+            <div class="row centrar">
+                <div class="column">
+                  <div class="card">
+                    <h2 class="centrar">Calcula La Media Aritmetica, la Moda y la Mediana</h2>
+                    <form action="">
+                        <div class="centrar">
+                            <h5>Escribre uno a uno los valores a tomar para calcular
+                                <br>
+                                 y presiona agregar en cada uno</h5>
+                            <input id="inputValor" type="number">
+                            <div>
+                                <button class="button2 small-btn" type="button" onclick="addValor()">Agregar</button>
+                                <button class="button2 small-btn" type="button" onclick="Limpiar()">Limpiar</button>  
+                            </div>
+                        </div>
+                        
+                        <button class="button1" type="button" onclick="enviarLista()">Calcular Meia Aritmetica</button>
+                        <button class="button1" type="button" onclick="enviarValidacion(), enviarDatoMediana()">Calcular Mediana</button>
+                        <div class="correcto"><p id="mensaje1"></p><br><p id="mensaje2"></p></div>
+                    </form>
+                  </div>
+                </div>               
+              </div>
+        </section>
+    </main>
+    <script src="./promedio.js"></script>
+</body>
+</html>

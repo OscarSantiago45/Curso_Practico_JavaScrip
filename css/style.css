@@ -45,6 +45,22 @@
     font-size: 16px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+.button2 {
+  background-color: #576d57; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.small-btn {
+  width: 4rem;
+  height: 4rem;
+}
 
 
 * {
@@ -381,4 +397,10 @@ main{
       align-items: flex-start;
       flex-direction: column;
   }
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
 }

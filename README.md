@@ -22,4 +22,11 @@
 
 - Cuarto Paso: Integrar JavaScrip con Html
 
+![Screenshot](img/descuentos.jpg) 
+-  Primer Paso: Definir las Formulas
 
+- Segundo paso: Implementar las formulas en JavaScrip
+
+- Tercer Paso: Crear Funciones
+
+- Cuarto Paso: Integrar JavaScrip con Html
