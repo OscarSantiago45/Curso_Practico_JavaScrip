@@ -81,5 +81,44 @@ function Limpiar(){
 }
 
 
+//moda
+function clacularModa(lista1Count){
+  lista1Count = {};
+
+valores.map(
+  function (elemento) {
+    if (lista1Count[elemento]) {
+      lista1Count[elemento] += 1;
+    } else {
+      lista1Count[elemento] = 1;
+    }
+  }
+);
+
+const lista1Array = Object.entries(lista1Count).sort(
+  function (elementoA, elementoB) {
+    return elementoA[1] - elementoB[1];
+  }
+);
+
+const moda = lista1Array[lista1Array.length - 1];
+/*console.log(moda);
+document.getElementById("mensaje3").innerHTML = `La moda es: ${moda[0]}, se repite ${moda[1]} veces`;
+
+//debugger
+for(let i=0;i<lista1Array.length; i++ ){
+  var valor1= lista1Array[0];
+  var valor2= lista1Array[1];
+
+  var suma=suma+(valor1[i]/valor2[i])
+  console.log(suma);
+  //console.log(lista1Array[i][i]);
+}*/
+
+}
+
+function enviarDatoModa(){
+  clacularModa(valores);
+}
 
 
